@@ -1,4 +1,6 @@
 <?php
+namespace andreterceiro;
+
 function getMaxDay($month, $year) {
     if ($month == '01' || $month == '03' || $month == '05' || $month == '07' || $month == '08' || $month == '10' || $month == '12') {
         return 31;
