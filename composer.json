@@ -14,5 +14,6 @@
             "email": "andre.terceiro@riachuelo.com.br"
         }
     ],
-    "require": {}
+    "require": {},
+    "minimum-stability": "dev"
 }
