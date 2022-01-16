@@ -1,5 +1,6 @@
 {
     "name": "andreterceiro/max-day-of-the-month",
+    "version": "1.0.0",
     "description": "Return the number of the maximum day in the month",
     "type": "library",
     "require-dev": {
