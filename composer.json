@@ -1,9 +1,7 @@
 {
     "name": "andreterceiro/max-day-of-the-month",
-    "version": "1.0.0",
     "description": "Return the number of the maximum day in the month",
     "keywords": ["calendar"],
-    "type": "library",
     "require-dev": {
         "phpunit/phpunit": "^9.5"
     },
