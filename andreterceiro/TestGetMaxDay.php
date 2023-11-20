@@ -1,12 +1,21 @@
 <?php
 namespace andreterceiro;
 require_once("maxDayOfTheMonth.php");
-require_once("../vendor/autoload.php");
 
 use PHPUnit\Framework\TestCase;
 
-final class EmailTest extends TestCase
+/**
+ * Tests of the max day of the month calculation
+ */
+final class TestGetMaxDay extends TestCase
 {
+    /**
+     * Testing the maximun day of january
+     * 
+     * @access public
+     * 
+     * @return null
+     */
     public function testJanuary(): void
     {
         $this->assertEquals(
@@ -15,6 +24,13 @@ final class EmailTest extends TestCase
         );
     }
 
+    /**
+     * Testing the maximun day of march
+     * 
+     * @access public
+     * 
+     * @return null
+     */
     public function testMarch(): void
     {
         $this->assertEquals(
@@ -23,6 +39,13 @@ final class EmailTest extends TestCase
         );
     }
 
+    /**
+     * Testing the maximun day of april
+     * 
+     * @access public
+     * 
+     * @return null
+     */
     public function testApril(): void
     {
         $this->assertEquals(
@@ -31,6 +54,13 @@ final class EmailTest extends TestCase
         );
     }
 
+    /**
+     * Testing the maximun day of may
+     * 
+     * @access public
+     * 
+     * @return null
+     */
     public function testMay(): void
     {
         $this->assertEquals(
@@ -39,6 +69,13 @@ final class EmailTest extends TestCase
         );
     }
 
+    /**
+     * Testing the maximun day of june
+     * 
+     * @access public
+     * 
+     * @return null
+     */
     public function testJune(): void
     {
         $this->assertEquals(
@@ -47,6 +84,13 @@ final class EmailTest extends TestCase
         );
     }
 
+    /**
+     * Testing the maximun day of july
+     * 
+     * @access public
+     * 
+     * @return null
+     */
     public function testJuly(): void
     {
         $this->assertEquals(
@@ -55,6 +99,13 @@ final class EmailTest extends TestCase
         );
     }
 
+    /**
+     * Testing the maximun day of august
+     * 
+     * @access public
+     * 
+     * @return null
+     */
     public function testAugust(): void
     {
         $this->assertEquals(
@@ -63,6 +114,13 @@ final class EmailTest extends TestCase
         );
     }
 
+    /**
+     * Testing the maximun day of september
+     * 
+     * @access public
+     * 
+     * @return null
+     */
     public function testSeptember(): void
     {
         $this->assertEquals(
@@ -71,6 +129,13 @@ final class EmailTest extends TestCase
         );
     }
    
+    /**
+     * Testing the maximun day of october
+     * 
+     * @access public
+     * 
+     * @return null
+     */
     public function testOctober(): void
     {
         $this->assertEquals(
@@ -79,6 +144,13 @@ final class EmailTest extends TestCase
         );
     }
 
+    /**
+     * Testing the maximun day of november
+     * 
+     * @access public
+     * 
+     * @return null
+     */
     public function testNovember(): void
     {
         $this->assertEquals(
@@ -87,6 +159,13 @@ final class EmailTest extends TestCase
         );
     }
 
+    /**
+     * Testing the maximun day of december
+     * 
+     * @access public
+     * 
+     * @return null
+     */
     public function testDecember(): void
     {
         $this->assertEquals(
@@ -95,6 +174,13 @@ final class EmailTest extends TestCase
         );
     }
 
+    /**
+     * Testing the maximun day of febuary in 1996
+     * 
+     * @access public
+     * 
+     * @return null
+     */
     public function testFebuary1996(): void
     {
         $this->assertEquals(
@@ -103,12 +189,18 @@ final class EmailTest extends TestCase
         );
     }
 
-    public function testFebuary2000(): void
+    /**
+     * Testing the maximun day of febuary in 1997
+     * 
+     * @access public
+     * 
+     * @return null
+     */
+    public function testFebuary1997(): void
     {
         $this->assertEquals(
-            getMaxDay("02", "2000"),
-            29
+            getMaxDay("02", "1997"),
+            28
         );
     }
-
 }
